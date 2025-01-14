@@ -26,3 +26,6 @@ rails t
 ```
 rails s
 ```
+
+## Example
+[Screencast from 2025-01-14 21-49-03.webm](https://github.com/user-attachments/assets/65e78016-cf21-4bbe-b19b-71a067eb3f28)
