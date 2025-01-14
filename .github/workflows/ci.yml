@@ -3,7 +3,7 @@ name: CI
 on:
   pull_request:
   push:
-    branches: [ main ]
+    branches: [main]
 
 jobs:
   scan_ruby:
@@ -78,8 +78,10 @@ jobs:
       - name: Run tests
         env:
           RAILS_ENV: test
+          GROQ_API_BASE_URL: https://api.groq.com
+          GROQ_API_KEY: sample
           # REDIS_URL: redis://localhost:6379/0
-        run: bin/rails db:test:prepare test test:system
+        run: bin/rails test test:system
 
       - name: Keep screenshots from failed system tests
         uses: actions/upload-artifact@v4
