@@ -1,24 +1,28 @@
-# README
+# LLM Recipes
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Use LLM to create recipes with ingredients provided by the user
 
-Things you may want to cover:
+Project created with
 
-* Ruby version
+- Rails 8.0.1
+- ruby 3.4.1
 
-* System dependencies
+The project uses the Groq API to interact with the LLM and the following env variables are required to properly run the project and generate recipes:
 
-* Configuration
+```
+GROQ_API_KEY=api_key_provided_by_groq
+GROQ_API_BASE_URL=https://api.groq.com
+```
 
-* Database creation
 
-* Database initialization
+## Tests
 
-* How to run the test suite
+```
+rails t
+```
 
-* Services (job queues, cache servers, search engines, etc.)
+## Running the project
 
-* Deployment instructions
-
-* ...
+```
+rails s
+```
